@@ -1,0 +1,38 @@
+.home-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background : #63A4FF;
+    height: 92px;
+}
+.home-card {
+  max-width: 400px;
+  height: 259px;
+  margin: 25px;
+}
+
+.home-card mat-card-content{
+margin-top: 35%;
+}
+.admin-tools{
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #EEEEEE;
+}
+
+.tool-text{
+  color: white;
+}
+.workspace-card{
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+.request-card{
+background: linear-gradient(180deg, rgba(221, 113, 113, 0.5) 0%, rgba(0, 0, 0, 0.2) 100%);
+}
+
+.provisioning-card{
+background: linear-gradient(180deg, rgba(34, 178, 22, 0.5) 0%, rgba(0, 0, 0, 0.2) 100%);
+}
+.audit-card{
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.2) 100%);
+}

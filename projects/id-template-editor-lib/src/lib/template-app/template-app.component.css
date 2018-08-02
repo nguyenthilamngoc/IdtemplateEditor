@@ -4,9 +4,14 @@
 
 .sidenav {
   width: 200px;
+  top: 64px;
 }
 
 .mat-toolbar.mat-primary {
   position: sticky;
   top: 0;
 }
+.template-toolbar {
+background : #63A4FF;
+}
+

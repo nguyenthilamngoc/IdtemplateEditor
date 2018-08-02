@@ -1,7 +1,7 @@
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { MyNavComponent } from './my-nav/my-nav.component';
+import { TemplateAppComponent } from './template-app/template-app.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
 import { IdTemplateEditorLibComponent } from './id-template-editor-lib.component';
@@ -16,7 +16,7 @@ import { IdTemplateEditorLibComponent } from './id-template-editor-lib.component
     MatIconModule,
     MatListModule
   ],
-  declarations: [IdTemplateEditorLibComponent, MyNavComponent],
+  declarations: [IdTemplateEditorLibComponent, TemplateAppComponent],
   exports: [IdTemplateEditorLibComponent]
 })
 export class IdTemplateEditorLibModule { }

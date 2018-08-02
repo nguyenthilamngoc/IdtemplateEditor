@@ -1,17 +1,45 @@
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
+import { LayoutModule } from '@angular/cdk/layout';
 import { AppComponent } from './app.component';
-import { IdTemplateEditorLibModule } from 'id-template-editor-lib';
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule,
+    MatMenuModule,
+    MatCardModule,
+   } from '@angular/material';
 
+import { IdTemplateEditorLibModule } from 'id-template-editor-lib';
+import { NavComponent } from './nav/nav.component';
+import { TemplateEditorComponent } from './template-editor/template-editor.component';
+import { HomeComponent } from './home/home.component';
+
+const appRoutes: Routes = [
+  { path: 'home', component : HomeComponent },
+  { path: 'template-editor', component : TemplateEditorComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full'}
+];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavComponent,
+    HomeComponent,
+    TemplateEditorComponent,
   ],
   imports: [
     BrowserModule,
-    IdTemplateEditorLibModule
+    RouterModule.forRoot(appRoutes),
+    BrowserAnimationsModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule,
+    MatMenuModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

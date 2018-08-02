@@ -1,0 +1,39 @@
+.evd-header-toolbar {
+  height: 64px;
+  background: #1976D2;
+  justify-content: space-between;
+  align-content: center;
+  padding-left: 28px;
+  top:1px;
+  position: -webkit-sticky;
+  position: sticky;
+}
+.mat-elevation-z5 {
+   position: relative;
+   z-index: 2;
+}
+.evd-header-toolbar-pinned{
+    position: fixed;
+    transform: translateZ(0);
+}
+.mat-sidenav-container{
+  top:64px;
+}
+.sidenav {
+  width: 200px;
+  top:64px !important;
+}
+.sidenav-container {
+  height: 100%;
+}
+.mat-elevation-z5 {
+   z-index: 2;
+}
+
+.menu-toolbar{
+background : #616161;
+height: 144px;
+}
+.menu-list{
+background : #FAFAFA;
+}

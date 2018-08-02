@@ -1,0 +1,12 @@
+.template-toolbar {
+    display: flex;
+    justify-content: space-between;
+    background : #63A4FF;
+    height: 92px;
+}
+.add {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+}
