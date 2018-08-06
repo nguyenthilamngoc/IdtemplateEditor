@@ -6,7 +6,19 @@
   bottom: 20px;
   right: 20px;
   color: white;
+  z-index: 2;
 }
+
 .add-circle{
   background-color: #D28D19;
+}
+.title-toolbar-btn-row{
+  margin-bottom: -16px;
+}
+.title-toolbar-templates{
+  padding: 0 20px 25px 28px;
+}
+
+#tabs{
+  margin-top : -48px;
 }

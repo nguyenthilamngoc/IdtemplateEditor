@@ -8,12 +8,13 @@ import { AppComponent } from './app.component';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule,
     MatMenuModule,
     MatCardModule,
+    MatTabsModule
    } from '@angular/material';
 
 import { NavComponent } from './nav/nav.component';
 import { TemplateEditorComponent } from './template-editor/template-editor.component';
 import { HomeComponent } from './home/home.component';
-
+import { ListTemplatesComponent } from './template-editor/list-templates/list-templates.component';
 const appRoutes: Routes = [
   { path: 'home', component : HomeComponent },
   { path: 'template-editor', component : TemplateEditorComponent },
@@ -26,6 +27,7 @@ const appRoutes: Routes = [
     NavComponent,
     HomeComponent,
     TemplateEditorComponent,
+    ListTemplatesComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,7 +40,8 @@ const appRoutes: Routes = [
     MatIconModule,
     MatListModule,
     MatMenuModule,
-    MatCardModule
+    MatCardModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,58 @@
+<mat-list>
+  <h3 mat-subheader>Identities</h3>
+  <div class="list-templates">
+    <mat-list-item *ngFor="let template of identity_templates">
+      <mat-icon mat-list-icon>face</mat-icon>
+      <h4 mat-line>{{template.name}}</h4>
+      <p mat-line> {{template.updated | date}} </p>
+      <div id="template-actions">
+        <mat-icon mat-list-icon>edit</mat-icon>
+        <mat-icon mat-list-icon>file_copy</mat-icon>
+        <mat-icon mat-list-icon>more_vert</mat-icon>
+      </div>
+    </mat-list-item>
+  </div>
+
+  <mat-divider></mat-divider>
+  <h3 mat-subheader>Organizations</h3>
+  <div class="list-templates">
+    <mat-list-item *ngFor="let note of notes">
+      <mat-icon mat-list-icon>note</mat-icon>
+      <h4 mat-line>{{note.name}}</h4>
+      <p mat-line> {{note.updated | date}} </p>
+      <div id="template-actions">
+        <mat-icon mat-list-icon>edit</mat-icon>
+        <mat-icon mat-list-icon>file_copy</mat-icon>
+        <mat-icon mat-list-icon>more_vert</mat-icon>
+      </div>
+    </mat-list-item>
+  </div>
+  <mat-divider></mat-divider>
+  <h3 mat-subheader>Roles</h3>
+  <div class="list-templates">
+    <mat-list-item *ngFor="let template of organization_templates">
+      <mat-icon mat-list-icon>note</mat-icon>
+      <h4 mat-line>{{template.name}}</h4>
+      <p mat-line> {{template.updated | date}} </p>
+      <div id="template-actions">
+        <mat-icon mat-list-icon>edit</mat-icon>
+        <mat-icon mat-list-icon>file_copy</mat-icon>
+        <mat-icon mat-list-icon>more_vert</mat-icon>
+      </div>
+    </mat-list-item>
+  </div>
+  <mat-divider></mat-divider>
+  <h3 mat-subheader>Applications</h3>
+  <div class="list-templates">
+    <mat-list-item *ngFor="let template of notes">
+      <mat-icon mat-list-icon>note</mat-icon>
+      <h4 mat-line>{{template.name}}</h4>
+      <p mat-line> {{template.updated | date}} </p>
+      <div id="template-actions">
+        <mat-icon mat-list-icon>edit</mat-icon>
+        <mat-icon mat-list-icon>file_copy</mat-icon>
+        <mat-icon mat-list-icon>more_vert</mat-icon>
+      </div>
+    </mat-list-item>
+  </div>
+</mat-list>

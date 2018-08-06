@@ -14,4 +14,6 @@
 .template-toolbar {
 background : #63A4FF;
 }
-
+mat-tab{
+  background : #63A4FF;
+}

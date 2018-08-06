@@ -30,3 +30,6 @@ mat-icon{
     color:rgba(0, 0, 0, 0.65);
 
 }
+.title-toolbar{
+    padding: 0 16px 4px 16px;
+}

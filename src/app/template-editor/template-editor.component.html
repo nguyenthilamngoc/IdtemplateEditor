@@ -1,15 +1,33 @@
 <mat-toolbar class="page-toolbar template-toolbar">
-  <span>Templates management</span>
+  <div>
+    <div class="title-toolbar title-toolbar-templates">
+      <span>Templates management</span>
+    </div>
+    <!-- <div class="button-row title-toolbar-btn-row">
+        <button class="templates-toolbar-btn" type="button" mat-button>DEPLOYED</button>
+        <button class="templates-toolbar-btn" type="button" mat-button>DRAFTS</button>
+      </div> -->
+
+  </div>
   <div class="search-container">
-    <input type="search" placeholder="search templates"/>
+    <input type="search" placeholder="search templates" />
     <button type="button" aria-label="Toggle sidenav" mat-icon-button>
         <mat-icon aria-label="Side nav toggle icon">search</mat-icon>
     </button>
   </div>
 </mat-toolbar>
 
-  <span class="add">
+<mat-tab-group [selectedIndex]="0" id="tabs">
+  <mat-tab label="DEPLOYED">
+    <app-list-templates></app-list-templates>
+  </mat-tab>
+  <mat-tab label="DRAFTS">
+    <app-list-templates></app-list-templates>
+  </mat-tab>
+</mat-tab-group>
+
+<span class="add">
     <button mat-fab class="add-circle">
       <mat-icon>add circle</mat-icon>
     </button>
-  </span>
+</span>

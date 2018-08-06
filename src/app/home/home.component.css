@@ -2,7 +2,7 @@
   height: 92px;
 }
 .home-card {
-  width: 400px;
+  width: 344px;
   height: 259px;
   margin: 25px;
 }
@@ -13,7 +13,7 @@ margin-top: 35%;
 .admin-tools{
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
   background-color: #EEEEEE;
 }
 
@@ -31,5 +31,8 @@ background: linear-gradient(180deg, rgba(221, 113, 113, 0.5) 0%, rgba(0, 0, 0, 0
 background: linear-gradient(180deg, rgba(34, 178, 22, 0.5) 0%, rgba(0, 0, 0, 0.2) 100%);
 }
 .audit-card{
-background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.2) 100%);
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.7) 100%);
 }
+/* Black — Dark Gradient (Color) */
+
+
