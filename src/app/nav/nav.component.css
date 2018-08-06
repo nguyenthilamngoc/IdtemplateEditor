@@ -20,8 +20,11 @@
   top:64px;
 }
 .sidenav {
-  width: 200px;
+  width: 255px;
   top:64px !important;
+}
+.logo-product{
+  margin-left: 30px;
 }
 .sidenav-container {
   height: 100%;
@@ -31,9 +34,47 @@
 }
 
 .menu-toolbar{
+display: flex;
+flex-direction: column;
 background : #616161;
 height: 144px;
+color: white;
+
+}
+.menu-toolbar p {
+  font-size: 14px;
+  font-weight: normal;
 }
 .menu-list{
 background : #FAFAFA;
+}
+.avatar{
+ width: 56px;
+ height: 56px;
+ border-radius: 50%;
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+.menu-avatar-name{
+  width:210px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.menu-list mat-icon{
+  color: #616161;
+}
+.name-post{
+  width: 130px;
+  align-content: space-around;
+}
+.name-post p{
+  height: 14px;
+  margin-top: -3px;
+}
+
+#name{
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif; 
 }

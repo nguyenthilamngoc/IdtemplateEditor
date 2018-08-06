@@ -1,7 +1,4 @@
 .template-toolbar {
-    display: flex;
-    justify-content: space-between;
-    background : #63A4FF;
     height: 92px;
 }
 .add {
@@ -9,4 +6,7 @@
   bottom: 20px;
   right: 20px;
   color: white;
+}
+.add-circle{
+  background-color: #D28D19;
 }

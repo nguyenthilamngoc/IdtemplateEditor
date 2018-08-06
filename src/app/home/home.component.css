@@ -1,12 +1,8 @@
 .home-toolbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background : #63A4FF;
-    height: 92px;
+  height: 92px;
 }
 .home-card {
-  max-width: 400px;
+  width: 400px;
   height: 259px;
   margin: 25px;
 }
@@ -15,8 +11,9 @@
 margin-top: 35%;
 }
 .admin-tools{
-  display: grid;
-  grid-template-columns: auto auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
   background-color: #EEEEEE;
 }
 

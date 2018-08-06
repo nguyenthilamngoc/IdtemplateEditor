@@ -10,7 +10,6 @@ import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, Mat
     MatCardModule,
    } from '@angular/material';
 
-import { IdTemplateEditorLibModule } from 'id-template-editor-lib';
 import { NavComponent } from './nav/nav.component';
 import { TemplateEditorComponent } from './template-editor/template-editor.component';
 import { HomeComponent } from './home/home.component';

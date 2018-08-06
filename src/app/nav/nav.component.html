@@ -1,25 +1,45 @@
 <header>
-    <mat-toolbar class="evd-header-toolbar evd-header-toolbar-pinned  mat-elevation-z5">
-        <div>
-            <button mat-icon-button>
-      <mat-icon>menu</mat-icon>
-    </button>
-            <span>
+  <mat-toolbar class="evd-header-toolbar evd-header-toolbar-pinned  mat-elevation-z5">
+    <div>
+      <button mat-icon-button (click)=drawer.toggle()>
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span class="logo-product">
         <img src="../../assets/evidian_white.png">
+      </span>
+    </div>
+    <span>
+      <mat-icon>search</mat-icon>
     </span>
-        </div>
-        <span><mat-icon>search</mat-icon></span>
-    </mat-toolbar>
+  </mat-toolbar>
 </header>
 <div>
   <mat-sidenav-container class="sidenav-container">
     <mat-sidenav #drawer class="sidenav" fixedInViewport="true" [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="!(isHandset$ | async)">
-      <mat-toolbar class="menu-toolbar">Menu</mat-toolbar>
+      <mat-toolbar class="menu-toolbar">
+        <div class="menu-avatar-name">
+          <div class="avatar"></div>
+          <div class="name-post">
+            <p id="name">Oby-Wan</p>
+            <p id="post">Software engineer</p>
+          </div>
+        </div>
+        <div class="menu-email">
+          <p>oby-wan@atos.net</p>
+        </div>
+      </mat-toolbar>
       <mat-nav-list class="menu-list">
-        <a mat-list-item href="/home">Home</a>
-        <a mat-list-item href="/template-editor">Templates management</a>
-        <a mat-list-item href="#">Link 3</a>
+        <a mat-list-item href="/home">
+          <span>
+            <mat-icon>home</mat-icon>
+          </span>
+          Home</a>
+        <a mat-list-item href="/template-editor">
+          <span>
+            <mat-icon>description</mat-icon>
+          </span>
+          Templates management</a>
       </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content>
